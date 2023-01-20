@@ -1,0 +1,85 @@
+body {
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+header {
+  width: max(80%, 30rem);
+  background-color: cadetblue;
+}
+
+main {
+  width: max(80%, 30rem);
+  margin-top: 4rem;
+}
+
+#new-item-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-item-form > * {
+  margin: 0.15rem;
+}
+
+#item-input {
+  font-size: 1.6rem;
+  flex-basis: 70%;
+  flex-shrink: 2;
+  padding: 0.8rem;
+  border: #333 solid 1px;
+  border-radius: 12px;
+  outline: none;
+}
+
+#item-input:active,
+#item-input:focus {
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+#list {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.list-item-label:hover,
+[data-list-item-checkbox]:hover {
+  cursor: pointer;
+}
+
+.list-item-label:hover > [data-list-item-text] {
+  color: #333;
+}
+
+[data-list-item-checkbox]:checked ~ [data-list-item-text] {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+[data-button-delete] {
+  margin-left: 0.5rem;
+}
+
+button {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 255, 255);
+  background-color: cadetblue;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checklist App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <form id="new-item-form">
+        <input type="text" id="item-input" placeholder="add item to checklist" />
+        <button type="submit">Add Item</button>
+      </form>
+    </header>
+
+    <main>
+      <ul id="list"></ul>
+
+      <template id="list-item-template">
+        <li class="list-item">
+          <label class="list-item-label">
+            <input type="checkbox" data-list-item-checkbox />
+            <span data-list-item-text></span>
+          </label>
+          <button data-button-delete>Delete</button>
+        </li>
+      </template>
+    </main>
+  </body>
+</html>
