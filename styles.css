@@ -215,13 +215,3 @@ form {
 .btn.delete:hover {
   color: var(--clr-warning);
 }
-
-@media only screen and (max-width: 610px) {
-  body {
-    grid:
-      'header header header header' auto
-      '. lists .' auto
-      '. active .' auto /
-      1fr 3fr 1fr;
-  }
-}
